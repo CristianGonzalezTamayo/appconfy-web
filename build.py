@@ -12,7 +12,7 @@ import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
-CONTACT = "soporte@appconfy.com"  # único lugar del correo de contacto
+CONTACT = "confy.cuenta.soporte@gmail.com"  # único lugar del correo de contacto
 
 CSS = """
 :root{--text:#111827;--muted:#6B7280;--line:#E5E7EB;--accent:#1B4332}

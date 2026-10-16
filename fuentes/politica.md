@@ -17,12 +17,12 @@ Solo para verificar comprobantes, mostrarte su estado y enviarte avisos. No vend
 
 ## Conservación y eliminación
 
-Las fotos de comprobantes se eliminan automáticamente a los 30 días. Los datos de cada pago (monto, fecha, hora, banco, número de comprobante y estado) se conservan mientras exista tu cuenta y se borran cuando la eliminas. Puedes pedir la eliminación de tu cuenta y tus datos escribiendo a soporte@appconfy.com. Puedes revocar el acceso a tu correo o a los SMS en cualquier momento desde tu cuenta de Google o Microsoft y desde los ajustes del teléfono.
+Las fotos de comprobantes se eliminan automáticamente a los 30 días. Los datos de cada pago (monto, fecha, hora, banco, número de comprobante y estado) se conservan mientras exista tu cuenta y se borran cuando la eliminas. Puedes pedir la eliminación de tu cuenta y tus datos escribiendo a confy.cuenta.soporte@gmail.com. Puedes revocar el acceso a tu correo o a los SMS en cualquier momento desde tu cuenta de Google o Microsoft y desde los ajustes del teléfono.
 
 ## Cómo eliminar tu cuenta
 
 - **Desde la app:** abre Confy, toca el menú ⋮ y elige **Eliminar mi cuenta**. Escribe ELIMINAR para confirmar.
-- **Por correo:** escribe desde el correo de tu cuenta a soporte@appconfy.com con el asunto "Eliminar mi cuenta". La eliminamos en un máximo de 30 días.
+- **Por correo:** escribe desde el correo de tu cuenta a confy.cuenta.soporte@gmail.com con el asunto "Eliminar mi cuenta". La eliminamos en un máximo de 30 días.
 
 Qué se borra: tu cuenta, tu nombre y tu correo. Si eres **dueño** de un negocio, se borra todo: el negocio, todos sus comprobantes y sus fotos, los correos conectados y las invitaciones. Si eres **trabajador**, los comprobantes que enviaste se conservan en el historial del negocio para el dueño, sin tu nombre.
 
@@ -32,7 +32,7 @@ Los datos viajan cifrados y el acceso está restringido por cuenta.
 
 ## Tus derechos
 
-Conforme a la Ley 1581 de 2012 de Colombia, puedes conocer, actualizar, rectificar y pedir la supresión de tus datos escribiendo a soporte@appconfy.com.
+Conforme a la Ley 1581 de 2012 de Colombia, puedes conocer, actualizar, rectificar y pedir la supresión de tus datos escribiendo a confy.cuenta.soporte@gmail.com.
 
 ## Menores
 
@@ -44,7 +44,7 @@ Si cambiamos esta política, publicaremos la nueva versión aquí con su fecha.
 
 ## Contacto
 
-soporte@appconfy.com
+confy.cuenta.soporte@gmail.com
 
 # Privacy Policy for Confy
 
@@ -65,12 +65,12 @@ Only to verify receipts, show their status and send you alerts. We do not sell y
 
 ## Retention and deletion
 
-Receipt photos are automatically deleted after 30 days. Payment details (amount, date, time, bank, receipt number and status) are kept while your account exists and are deleted when you delete it. You can request deletion of your account and data by writing to soporte@appconfy.com. You can revoke access to your email or SMS at any time from your Google or Microsoft account and from your phone settings.
+Receipt photos are automatically deleted after 30 days. Payment details (amount, date, time, bank, receipt number and status) are kept while your account exists and are deleted when you delete it. You can request deletion of your account and data by writing to confy.cuenta.soporte@gmail.com. You can revoke access to your email or SMS at any time from your Google or Microsoft account and from your phone settings.
 
 ## How to delete your account
 
 - **In the app:** open Confy, tap the ⋮ menu and choose **Eliminar mi cuenta** (Delete my account). Type ELIMINAR to confirm.
-- **By email:** write from your account's email address to soporte@appconfy.com with the subject "Eliminar mi cuenta". We delete it within 30 days.
+- **By email:** write from your account's email address to confy.cuenta.soporte@gmail.com with the subject "Eliminar mi cuenta". We delete it within 30 days.
 
 What is deleted: your account, your name and your email. If you are a business **owner**, everything is deleted: the business, all its receipts and photos, connected email accounts and invitations. If you are an **employee**, the receipts you sent remain in the business history for the owner, without your name.
 
@@ -80,7 +80,7 @@ Data is encrypted in transit and access is restricted per account.
 
 ## Your rights
 
-Under Colombian Law 1581 of 2012, you may access, update, correct and request deletion of your data by writing to soporte@appconfy.com.
+Under Colombian Law 1581 of 2012, you may access, update, correct and request deletion of your data by writing to confy.cuenta.soporte@gmail.com.
 
 ## Children
 
@@ -92,4 +92,4 @@ If we change this policy, we will post the new version here with its date.
 
 ## Contact
 
-soporte@appconfy.com
+confy.cuenta.soporte@gmail.com
