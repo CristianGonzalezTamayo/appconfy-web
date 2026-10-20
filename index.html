@@ -1,42 +1,174 @@
 <!doctype html>
 <html lang="es">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Confy</title>
-<link rel="icon" href="shield-64.png">
-<style>
-:root{--text:#111827;--muted:#6B7280;--line:#E5E7EB;--accent:#1B4332}
-*{box-sizing:border-box}
-body{margin:0;background:#fff;color:var(--text);font:17px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
-main{max-width:720px;margin:0 auto;padding:40px 20px 64px}
-header{max-width:720px;margin:0 auto;padding:20px 20px 0;display:flex;align-items:center;gap:10px}
-header a{display:flex;align-items:center;gap:10px;color:var(--accent);font-weight:700;text-decoration:none}
-header img{width:28px;height:28px}
-h1{font-size:30px;line-height:1.2;margin:0 0 6px}
-h2{font-size:20px;margin:32px 0 6px}
-a{color:var(--accent)}
-.meta{color:var(--muted);margin:0 0 24px}
-.lang{color:var(--muted);font-size:15px}
-hr{border:0;border-top:1px solid var(--line);margin:48px 0}
-footer{max-width:720px;margin:0 auto;padding:24px 20px 40px;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
-footer a{color:var(--muted);margin-right:16px}
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Confy · Verifica comprobantes de Bancolombia</title>
+  <meta name="description" content="Confy cruza cada comprobante de transferencia con el aviso real de Bancolombia y te dice si es verdad.">
+  <link rel="canonical" href="https://appconfy.com/">
+  <link rel="alternate" hreflang="es" href="https://appconfy.com/">
+  <link rel="alternate" hreflang="en" href="https://appconfy.com/en/">
+  <link rel="alternate" hreflang="x-default" href="https://appconfy.com/">
+  <meta property="og:title" content="Confy · Verifica comprobantes de Bancolombia">
+  <meta property="og:description" content="Confy cruza cada comprobante de transferencia con el aviso real de Bancolombia y te dice si es verdad.">
+  <meta property="og:url" content="https://appconfy.com/">
+  <meta property="og:locale" content="es_CO">
+  <meta name="theme-color" content="#1B4332">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="preload" href="fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <script src="theme.js"></script>
 </head>
 <body>
-<header><a href=""><img src="shield-64.png" alt="">Confy</a></header>
-<main>
-<h1>Confy</h1>
-<p>Verificación de comprobantes de transferencia para negocios en Colombia.</p>
-<ul>
-<li><a href="privacidad/">Política de privacidad / Privacy policy</a></li>
-<li><a href="eliminar-cuenta/">Eliminar cuenta / Delete account</a></li>
-</ul>
-</main>
-<footer>
-<a href="privacidad/">Política de privacidad / Privacy</a>
-<a href="eliminar-cuenta/">Eliminar cuenta / Delete account</a>
-<a href="mailto:soporte@appconfy.com">soporte@appconfy.com</a>
-</footer>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+  <header class="site-header">
+    <div class="wrap header-row">
+      <a class="brand" href=""><img src="assets/confy-icono.webp" alt="" width="32" height="32"><span>Confy</span></a>
+      <nav class="main-nav" aria-label="Principal">
+        <a href="#como-funciona">Cómo funciona</a>
+        <a href="#confianza">Privacidad</a>
+        <a href="#preguntas">Preguntas</a>
+      </nav>
+      <div class="header-tools">
+        <a class="lang-link" href="en/" hreflang="en" lang="en">English</a>
+        <button class="theme-toggle" type="button" aria-label="Cambiar entre modo claro y oscuro"><span class="solo-claro">Oscuro</span><span class="solo-oscuro">Claro</span></button>
+      </div>
+    </div>
+  </header>
+  <main id="contenido">
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Para negocios que reciben transferencias Bancolombia</p>
+          <h1>Que ningún comprobante falso te <em>engañe</em> otra vez.</h1>
+          <p class="lead">Confy cruza cada comprobante con el aviso real de Bancolombia y te dice si es verdad.</p>
+          <div class="cta-row">
+        <!-- PLAY: cuando exista la ficha, añade href="ENLACE_DE_GOOGLE_PLAY", cambia "Próximamente" por "Disponible en" y quita aria-disabled -->
+        <a class="btn-play" aria-disabled="true"><span class="btn-kicker">Próximamente</span><span>Descargar en Google Play</span></a>
+            <span class="platform">Para Android.</span>
+          </div>
+        </div>
+        <div class="hero-demo">
+          <div class="demo-card">
+            <div class="demo-top"><span class="mono-label">Comprobante</span><span class="chip">Datos de prueba</span></div>
+            <div class="demo-amount">$ 120.000</div>
+            <dl class="demo-rows">
+              <dt>Banco</dt><dd>Bancolombia</dd>
+              <dt>Fecha</dt><dd>11 oct 2026 · 11:40 a. m.</dd>
+              <dt>Subido por</dt><dd>Demo Confy</dd>
+            </dl>
+            <div class="demo-status"><span class="check" aria-hidden="true">✓</span><div><strong>Verificado</strong><span>Coincide con el aviso de Bancolombia que llegó a tu correo.</span></div></div>
+          </div>
+          <div class="phone phone-hero"><img src="assets/hero-detalle-verificado.webp" alt="Pantalla de Confy con un comprobante de $120.000 de Bancolombia marcado como pago confirmado" width="560" height="695"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap stack">
+        <div class="section-head"><p class="eyebrow">El problema</p><h2>Lo que pasa en el mostrador, resuelto.</h2></div>
+        <div class="pains">
+          <div class="pain"><p class="pain-q">¿Será que sí llegó la plata?</p><p class="pain-a"><span aria-hidden="true">→</span><span>Confy revisa si el aviso del banco llegó a tu correo y te muestra el resultado en el comprobante.</span></p></div>
+          <div class="pain"><p class="pain-q">Comprobantes editados que parecen reales.</p><p class="pain-a"><span aria-hidden="true">→</span><span>Confy no se fija en cómo se ve la imagen. La compara con el aviso que te mandó el banco.</span></p></div>
+          <div class="pain"><p class="pain-q">Abrir la app del banco cada vez que alguien paga.</p><p class="pain-a"><span aria-hidden="true">→</span><span>El estado aparece en Confy. No tienes que entrar al banco para revisar cada pago.</span></p></div>
+          <div class="pain"><p class="pain-q">Discutir con el trabajador sobre un pago.</p><p class="pain-a"><span aria-hidden="true">→</span><span>Cada comprobante queda con quién lo subió y su estado.</span></p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="como-funciona">
+      <div class="wrap stack">
+        <div class="section-head"><p class="eyebrow">Cómo funciona</p><h2>Tres pasos.</h2></div>
+        <ol class="steps">
+          <li class="step">
+            <div class="step-screen"><div class="phone"><img src="assets/paso-1-revisar-comprobante.webp" alt="Pantalla de Confy «Revisar comprobante» con un pago de $120.000 de Bancolombia" width="560" height="964" loading="lazy"></div></div>
+            <div class="step-text"><span class="step-n">01</span><h3>El trabajador sube la foto</h3><p>Toma la foto del comprobante que le muestra el cliente y la sube a Confy.</p></div>
+          </li>
+          <li class="step">
+            <div class="step-screen"><div class="phone"><img src="assets/paso-2-conectar-correo.webp" alt="Pantalla de Confy para conectar el correo donde llegan los avisos de Bancolombia" width="560" height="560" loading="lazy"></div></div>
+            <div class="step-text"><span class="step-n">02</span><h3>Confy la cruza con el banco</h3><p>Busca el aviso de Bancolombia que llegó a tu correo y compara los datos del pago.</p></div>
+          </li>
+          <li class="step">
+            <div class="step-screen"><div class="phone"><img src="assets/paso-3-inicio-verificados.webp" alt="Inicio de Confy con la lista de comprobantes del día marcados como Verificado" width="560" height="928" loading="lazy"></div></div>
+            <div class="step-text"><span class="step-n">03</span><h3>Tú ves «Verificado»</h3><p>Si los datos coinciden, el comprobante aparece como Verificado en tu app.</p></div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section section-band">
+      <div class="wrap split">
+        <div class="section-head"><p class="eyebrow">Lo que Confy no hace</p><h2>Hace una sola cosa. Sin <em>rodeos.</em></h2></div>
+        <ul class="not-list">
+          <li><span>Sin abrir la app del banco.</span></li>
+          <li><span>Sin llamar a preguntar si llegó.</span></li>
+          <li><span>Sin creerle a una captura.</span></li>
+          <li><span>Sin pedir la clave de tu banco.</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="confianza">
+      <div class="wrap stack">
+        <div class="section-head"><p class="eyebrow">Confianza verificable</p><h2>No te pedimos que confíes. Puedes <em>revisarlo.</em></h2><p class="sub">Estas son las páginas donde explicamos qué datos usa Confy y cómo borrarlos.</p></div>
+        <div class="doc-cards">
+          <a class="doc-card" href="privacidad/"><span class="doc-path">/privacidad</span><span class="doc-title">Política de privacidad</span><span class="doc-text">Qué datos recoge Confy, para qué y por cuánto tiempo.</span><span class="doc-read">Leer →</span></a>
+          <a class="doc-card" href="eliminar-cuenta/"><span class="doc-path">/eliminar-cuenta</span><span class="doc-title">Eliminar cuenta</span><span class="doc-text">Cómo borrar tu cuenta y qué pasa con tus datos.</span><span class="doc-read">Leer →</span></a>
+        </div>
+        <div class="data-box">
+          <h3>Lo que pasa con tus datos</h3>
+          <ul>
+            <li><span>Te conectas con Gmail u Outlook iniciando sesión con Google o Microsoft.</span></li>
+            <li><span>Las fotos de los comprobantes se borran a los 30 días.</span></li>
+            <li><span>Los datos del pago (monto, fecha, hora, banco, número y estado) se conservan mientras exista la cuenta y se borran al eliminarla.</span></li>
+            <li><span>Si el dueño elimina su cuenta, se borra todo. Si la elimina un trabajador, sus comprobantes quedan en el negocio sin su nombre.</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-line" id="preguntas">
+      <div class="wrap split">
+        <div class="section-head"><p class="eyebrow">Preguntas frecuentes</p><h2>Lo que más nos preguntan.</h2></div>
+        <div class="faq">
+          <details open><summary>¿Con qué bancos funciona?</summary><div class="faq-a"><p>Por ahora, con transferencias de Bancolombia.</p></div></details>
+          <details><summary>¿Qué correo necesito?</summary><div class="faq-a"><p>Gmail u Outlook. Te conectas iniciando sesión con tu cuenta de Google o de Microsoft.</p></div></details>
+          <details><summary>¿Confy me pide la clave del banco?</summary><div class="faq-a"><p>No. Confy no pide la clave de tu banco.</p></div></details>
+          <details><summary>¿Qué pasa con las fotos de los comprobantes?</summary><div class="faq-a"><p>Se borran a los 30 días. Los datos del pago se conservan mientras exista la cuenta y se borran al eliminarla.</p></div></details>
+          <details><summary>¿Cómo elimino mi cuenta?</summary><div class="faq-a"><p>En la página Eliminar cuenta explicamos cómo. Si eres el dueño, se borra todo; si eres trabajador, tus comprobantes quedan en el negocio sin tu nombre.</p></div></details>
+          <details><summary>¿Funciona en iPhone?</summary><div class="faq-a"><p>Por ahora, Confy es solo para Android.</p></div></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing">
+      <div class="wrap">
+        <div class="closing-box">
+          <h2>El próximo comprobante, <em>verificado.</em></h2>
+        <!-- PLAY: cuando exista la ficha, añade href="ENLACE_DE_GOOGLE_PLAY", cambia "Próximamente" por "Disponible en" y quita aria-disabled -->
+        <a class="btn-play btn-play-dark" aria-disabled="true"><span class="btn-kicker">Próximamente</span><span>Descargar en Google Play</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-row">
+      <div class="footer-brand">
+        <span class="brand-sm"><img src="assets/confy-icono.webp" alt="" width="22" height="22">Confy</span>
+        <span>Verificación de comprobantes para negocios en Colombia.</span>
+      </div>
+      <nav class="footer-legal" aria-label="Legal">
+          <a href="privacidad/">Política de privacidad</a>
+          <a href="eliminar-cuenta/">Eliminar cuenta</a>
+      </nav>
+      <div class="footer-contact">
+        <span>Contacto</span>
+        <a href="mailto:soporte@appconfy.com">soporte@appconfy.com</a>
+        <span>© 2026 Confy · appconfy.com</span>
+        <a class="lang-link-foot" href="en/" hreflang="en" lang="en">English</a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
