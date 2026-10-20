@@ -6,7 +6,7 @@ Confy es una app que ayuda a negocios en Colombia a verificar comprobantes de tr
 
 ## Datos que recopilamos
 - Cuenta: correo, nombre y rol (dueño o trabajador).
-- Comprobantes: la foto y los datos de cada transferencia (monto, fecha y hora, entidad).
+- Comprobantes: la foto y los datos de cada transferencia (monto, fecha y hora, entidad). También guardamos el texto que la app lee de la foto, que puede incluir nombres o números de cuenta que aparezcan en ella.
 - Correos de notificación bancaria: si el dueño conecta Gmail, Confy busca solo los correos enviados por el remitente de los avisos de Bancolombia y abre únicamente los que coinciden. Si conecta Outlook, Confy le pide a Microsoft solo los correos de ese remitente y vuelve a comprobar que el remitente coincida exactamente. De cada aviso toma el monto, la fecha y la hora, y los usa solo para verificar comprobantes.
 - Token de notificaciones: un identificador del dispositivo para enviarte avisos.
 
@@ -18,9 +18,17 @@ Solo para verificar comprobantes, mostrarte su estado y enviarte avisos. No vend
 
 El uso de la información recibida de los alcances de Google Workspace se realizará de conformidad con la Política de Datos del Usuario de Google, incluidos los requisitos de Uso Limitado.
 
+Puedes leer esa política aquí: [Política de Datos del Usuario de Google](https://developers.google.com/terms/api-services-user-data-policy).
+
+El permiso que pedimos a Gmail es de solo lectura (gmail.readonly): Confy no envía, modifica ni borra correos. Sobre esos datos, nos comprometemos a lo siguiente:
+- Los usamos solo para verificar comprobantes.
+- No los transferimos a terceros, salvo por seguridad, para cumplir la ley o con tu consentimiento. Los proveedores que hacen funcionar la app, indicados arriba, los procesan solo por nuestra cuenta.
+- No los usamos para publicidad ni los vendemos.
+- Nadie del equipo lee tus correos. No guardamos su texto y solo accedemos a los datos derivados (monto, fecha y hora) para investigar errores o abusos, o si la ley lo exige.
+
 ## Conservación y eliminación
 
-Las fotos de comprobantes se eliminan automáticamente a los 30 días. Los datos de cada pago (monto, fecha, hora, banco, número de comprobante y estado) se conservan mientras exista tu cuenta y se borran cuando la eliminas. Puedes pedir la eliminación de tu cuenta y tus datos escribiendo a soporte@appconfy.com. Puedes revocar el acceso a tu correo en cualquier momento desde tu cuenta de Google o Microsoft.
+Las fotos de comprobantes se eliminan automáticamente a los 30 días. Los datos de cada pago (monto, fecha, hora, banco, número de comprobante y estado) se conservan mientras exista tu cuenta y se borran cuando la eliminas. El texto que la app lee de la foto se conserva mientras exista tu cuenta, aunque la foto se borre a los 30 días. Puedes pedir la eliminación de tu cuenta y tus datos escribiendo a soporte@appconfy.com. Puedes revocar el acceso a tu correo en cualquier momento desde tu cuenta de Google o Microsoft.
 
 Del correo del banco guardamos únicamente el monto, la fecha, la hora, un identificador del mensaje y el resultado de la verificación. No guardamos el texto del correo ni el nombre de quien pagó. Los permisos de acceso a tu correo se guardan en nuestra base de datos y solo los usa nuestro servidor; la app no puede leerlos. Puedes desconectar tu correo desde la app.
 
@@ -33,7 +41,11 @@ Qué se borra: tu cuenta, tu nombre y tu correo. Si eres **dueño** de un negoci
 
 ## Seguridad
 
-Los datos viajan por conexiones seguras (HTTPS) y el acceso está restringido por cuenta.
+Los datos viajan por conexiones seguras (HTTPS) y el acceso está restringido por cuenta. Los datos se almacenan en servidores de Supabase en São Paulo, Brasil.
+
+## Responsable del tratamiento
+
+El responsable del tratamiento de tus datos es Cristian González Tamayo, persona natural, Medellín (Antioquia), Colombia. Correo: soporte@appconfy.com.
 
 ## Tus derechos
 
@@ -59,7 +71,7 @@ Confy is an app that helps businesses in Colombia verify bank transfer receipts.
 
 ## Data we collect
 - Account: email, name and role (owner or employee).
-- Receipts: the photo and details of each transfer (amount, date and time, bank).
+- Receipts: the photo and details of each transfer (amount, date and time, bank). We also store the text the app reads from the photo, which may include names or account numbers that appear in it.
 - Bank notification emails: if the owner connects Gmail, Confy searches only for emails sent by the sender of Bancolombia's alerts and opens only those that match. If the owner connects Outlook, Confy asks Microsoft only for emails from that sender and checks again that the sender matches exactly. From each alert it takes the amount, date and time and uses them only to verify receipts.
 - Notification token: a device identifier used to send you alerts.
 
@@ -71,9 +83,17 @@ Only to verify receipts, show their status and send you alerts. We do not sell y
 
 The use of information received from Google Workspace scopes will adhere to the Google User Data Policy, including the Limited Use requirements.
 
+You can read that policy here: [Google User Data Policy](https://developers.google.com/terms/api-services-user-data-policy).
+
+The permission we request from Gmail is read-only (gmail.readonly): Confy does not send, modify or delete emails. For that data, we commit to the following:
+- We use it only to verify receipts.
+- We do not transfer it to third parties, except for security purposes, to comply with the law or with your consent. The providers that run the app, listed above, process it only on our behalf.
+- We do not use it for advertising and we do not sell it.
+- No one on the team reads your emails. We do not store their text and we only access the derived data (amount, date and time) to investigate errors or abuse, or if the law requires it.
+
 ## Retention and deletion
 
-Receipt photos are automatically deleted after 30 days. Payment details (amount, date, time, bank, receipt number and status) are kept while your account exists and are deleted when you delete it. You can request deletion of your account and data by writing to soporte@appconfy.com. You can revoke access to your email at any time from your Google or Microsoft account.
+Receipt photos are automatically deleted after 30 days. Payment details (amount, date, time, bank, receipt number and status) are kept while your account exists and are deleted when you delete it. The text the app reads from the photo is kept while your account exists, even though the photo is deleted after 30 days. You can request deletion of your account and data by writing to soporte@appconfy.com. You can revoke access to your email at any time from your Google or Microsoft account.
 
 From the bank's email we store only the amount, date, time, a message identifier and the verification result. We do not store the email text or the payer's name. The access permissions to your email are stored in our database and are used only by our server; the app cannot read them. You can disconnect your email from the app.
 
@@ -86,7 +106,11 @@ What is deleted: your account, your name and your email. If you are a business *
 
 ## Security
 
-Data travels over secure connections (HTTPS) and access is restricted per account.
+Data travels over secure connections (HTTPS) and access is restricted per account. Data is stored on Supabase servers in São Paulo, Brazil.
+
+## Data controller
+
+The controller of your personal data is Cristian González Tamayo, an individual (natural person), Medellín (Antioquia), Colombia. Email: soporte@appconfy.com.
 
 ## Your rights
 

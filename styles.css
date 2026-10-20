@@ -67,6 +67,10 @@ em{font-family:var(--f-serif);font-style:italic;font-weight:400;color:var(--bran
 .hero-copy{flex:1 1 440px;min-width:0;display:flex;flex-direction:column;gap:28px}
 .hero h1{font-weight:600;font-size:clamp(40px,6vw,76px);line-height:1.02;letter-spacing:-.035em}
 .hero h1 em{font-size:1.1em}
+/* Qué es Confy (párrafo de dos frases sobre el hero) */
+.about{display:flex;flex-direction:column;gap:8px;padding-top:clamp(28px,4vw,48px)}
+.about-text{font-size:clamp(16px,1.4vw,18px);line-height:1.55;color:var(--muted);max-width:44em}
+.about + .hero-grid{padding-top:clamp(28px,4vw,44px)}
 .lead{font-size:clamp(18px,1.6vw,21px);line-height:1.5;color:var(--muted);max-width:30em}
 .cta-row{display:flex;flex-wrap:wrap;align-items:center;gap:16px}
 .platform{font-size:14px;color:var(--muted)}

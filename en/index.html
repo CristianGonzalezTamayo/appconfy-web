@@ -4,20 +4,84 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Confy · Verify Bancolombia receipts</title>
-  <meta name="description" content="Confy checks every transfer receipt against Bancolombia’s real notification and tells you if it’s true.">
+  <meta name="description" content="Confy checks every transfer receipt against Bancolombia’s real notification and shows you whether it matches.">
   <link rel="canonical" href="https://appconfy.com/en/">
+  <link rel="alternate" hreflang="es-CO" href="https://appconfy.com/">
   <link rel="alternate" hreflang="en" href="https://appconfy.com/en/">
-  <link rel="alternate" hreflang="es" href="https://appconfy.com/">
   <link rel="alternate" hreflang="x-default" href="https://appconfy.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Confy">
   <meta property="og:title" content="Confy · Verify Bancolombia receipts">
-  <meta property="og:description" content="Confy checks every transfer receipt against Bancolombia’s real notification and tells you if it’s true.">
+  <meta property="og:description" content="Confy checks every transfer receipt against Bancolombia’s real notification and shows you whether it matches.">
   <meta property="og:url" content="https://appconfy.com/en/">
   <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="es_CO">
+  <meta property="og:image" content="https://appconfy.com/assets/og-confy-en.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Confy: never get fooled by a fake receipt again">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Confy · Verify Bancolombia receipts">
+  <meta name="twitter:description" content="Confy checks every transfer receipt against Bancolombia’s real notification and shows you whether it matches.">
+  <meta name="twitter:image" content="https://appconfy.com/assets/og-confy-en.png">
+  <meta name="twitter:image:alt" content="Confy: never get fooled by a fake receipt again">
   <meta name="theme-color" content="#1B4332">
   <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
   <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
   <link rel="stylesheet" href="../styles.css">
   <script src="../theme.js"></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://appconfy.com/#organization",
+        "name": "Confy",
+        "url": "https://appconfy.com/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://appconfy.com/assets/apple-touch-icon.png",
+          "width": 180,
+          "height": 180
+        },
+        "email": "soporte@appconfy.com",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "customer support",
+          "email": "soporte@appconfy.com"
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://appconfy.com/#website",
+        "name": "Confy",
+        "url": "https://appconfy.com/",
+        "inLanguage": [
+          "es-CO",
+          "en"
+        ],
+        "publisher": {
+          "@id": "https://appconfy.com/#organization"
+        }
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://appconfy.com/#app",
+        "name": "Confy",
+        "applicationCategory": "FinanceApplication",
+        "operatingSystem": "Android",
+        "description": "Confy is an app that helps businesses in Colombia verify bank transfer receipts. It compares the amount, date and time on each receipt with the notification Bancolombia sends to your email and shows you whether it matches.",
+        "url": "https://appconfy.com/en/",
+        "inLanguage": "en",
+        "publisher": {
+          "@id": "https://appconfy.com/#organization"
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <a class="skip" href="#contenido">Skip to content</a>
@@ -37,11 +101,15 @@
   </header>
   <main id="contenido">
     <section class="hero">
+      <div class="wrap about">
+        <p class="eyebrow">What is Confy</p>
+        <p class="about-text">Confy is an app that helps businesses in Colombia verify bank transfer receipts. It compares the amount, date and time on each receipt with the notification Bancolombia sends to your email and shows you whether it matches.</p>
+      </div>
       <div class="wrap hero-grid">
         <div class="hero-copy">
           <p class="eyebrow">For businesses that take Bancolombia transfers</p>
           <h1>Never get <em>fooled</em> by a fake receipt again.</h1>
-          <p class="lead">Confy checks every receipt against Bancolombia’s real notification and tells you if it’s true.</p>
+          <p class="lead">Confy checks every receipt against Bancolombia’s real notification and shows you whether it matches.</p>
           <div class="cta-row">
         <!-- PLAY: cuando exista la ficha, añade href="ENLACE_DE_GOOGLE_PLAY", cambia "Coming soon" por "Available on" y quita aria-disabled -->
         <a class="btn-play" aria-disabled="true"><span class="btn-kicker">Coming soon</span><span>Get it on Google Play</span></a>
@@ -69,7 +137,7 @@
         <div class="section-head"><p class="eyebrow">The problem</p><h2>What happens at the counter, solved.</h2></div>
         <div class="pains">
           <div class="pain"><p class="pain-q">Did the money actually arrive?</p><p class="pain-a"><span aria-hidden="true">→</span><span>Confy checks whether the bank’s notification reached your inbox and shows the result on the receipt.</span></p></div>
-          <div class="pain"><p class="pain-q">Edited receipts that look real.</p><p class="pain-a"><span aria-hidden="true">→</span><span>Confy doesn’t judge how the image looks. It compares it with the notification your bank sent you.</span></p></div>
+          <div class="pain"><p class="pain-q">Edited receipts that look real.</p><p class="pain-a"><span aria-hidden="true">→</span><span>Confy doesn’t judge whether the image looks real: it compares its data with the bank’s notification.</span></p></div>
           <div class="pain"><p class="pain-q">Opening the bank app every time someone pays.</p><p class="pain-a"><span aria-hidden="true">→</span><span>The status shows up in Confy. No need to log into your bank for every payment.</span></p></div>
           <div class="pain"><p class="pain-q">Arguing with an employee about a payment.</p><p class="pain-a"><span aria-hidden="true">→</span><span>Each receipt records who uploaded it and its status.</span></p></div>
         </div>
@@ -131,8 +199,8 @@
       <div class="wrap split">
         <div class="section-head"><p class="eyebrow">FAQ</p><h2>What people ask us most.</h2></div>
         <div class="faq">
-          <details open><summary>Which banks does it work with?</summary><div class="faq-a"><p>For now, Bancolombia transfers.</p></div></details>
-          <details><summary>What email do I need?</summary><div class="faq-a"><p>Gmail or Outlook. You connect by signing in with your Google or Microsoft account.</p></div></details>
+          <details open><summary>Which banks does it work with?</summary><div class="faq-a"><p>For now, with payments and transfers you receive in a Bancolombia account.</p></div></details>
+          <details><summary>What email do I need?</summary><div class="faq-a"><p>Gmail or Outlook. You connect by signing in with your Google or Microsoft account. It must be the email where you receive Bancolombia’s notifications.</p></div></details>
           <details><summary>Does Confy ask for my bank password?</summary><div class="faq-a"><p>No. Confy doesn’t ask for your bank password.</p></div></details>
           <details><summary>What happens to receipt photos?</summary><div class="faq-a"><p>They’re deleted after 30 days. Payment details are kept while the account exists and deleted when it’s removed.</p></div></details>
           <details><summary>How do I delete my account?</summary><div class="faq-a"><p>The Delete account page explains how. If you’re the owner, everything is deleted; if you’re an employee, your receipts stay with the business without your name.</p></div></details>
@@ -156,6 +224,7 @@
       <div class="footer-brand">
         <span class="brand-sm"><img src="../assets/confy-icono.webp" alt="" width="22" height="22">Confy</span>
         <span>Receipt verification for businesses in Colombia.</span>
+        <span>Confy is not affiliated with Bancolombia or Nequi.</span>
       </div>
       <nav class="footer-legal" aria-label="Legal">
           <a href="../en/privacy/">Privacy policy</a>

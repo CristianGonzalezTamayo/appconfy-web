@@ -1,23 +1,87 @@
 <!doctype html>
-<html lang="es">
+<html lang="es-CO">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Confy · Verifica comprobantes de Bancolombia</title>
-  <meta name="description" content="Confy cruza cada comprobante de transferencia con el aviso real de Bancolombia y te dice si es verdad.">
+  <meta name="description" content="Confy cruza cada comprobante de transferencia con el aviso real de Bancolombia y te muestra si coincide.">
   <link rel="canonical" href="https://appconfy.com/">
-  <link rel="alternate" hreflang="es" href="https://appconfy.com/">
+  <link rel="alternate" hreflang="es-CO" href="https://appconfy.com/">
   <link rel="alternate" hreflang="en" href="https://appconfy.com/en/">
   <link rel="alternate" hreflang="x-default" href="https://appconfy.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Confy">
   <meta property="og:title" content="Confy · Verifica comprobantes de Bancolombia">
-  <meta property="og:description" content="Confy cruza cada comprobante de transferencia con el aviso real de Bancolombia y te dice si es verdad.">
+  <meta property="og:description" content="Confy cruza cada comprobante de transferencia con el aviso real de Bancolombia y te muestra si coincide.">
   <meta property="og:url" content="https://appconfy.com/">
   <meta property="og:locale" content="es_CO">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:image" content="https://appconfy.com/assets/og-confy-es.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Confy: que ningún comprobante falso te engañe otra vez">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Confy · Verifica comprobantes de Bancolombia">
+  <meta name="twitter:description" content="Confy cruza cada comprobante de transferencia con el aviso real de Bancolombia y te muestra si coincide.">
+  <meta name="twitter:image" content="https://appconfy.com/assets/og-confy-es.png">
+  <meta name="twitter:image:alt" content="Confy: que ningún comprobante falso te engañe otra vez">
   <meta name="theme-color" content="#1B4332">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <link rel="stylesheet" href="styles.css">
   <script src="theme.js"></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://appconfy.com/#organization",
+        "name": "Confy",
+        "url": "https://appconfy.com/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://appconfy.com/assets/apple-touch-icon.png",
+          "width": 180,
+          "height": 180
+        },
+        "email": "soporte@appconfy.com",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "customer support",
+          "email": "soporte@appconfy.com"
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://appconfy.com/#website",
+        "name": "Confy",
+        "url": "https://appconfy.com/",
+        "inLanguage": [
+          "es-CO",
+          "en"
+        ],
+        "publisher": {
+          "@id": "https://appconfy.com/#organization"
+        }
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://appconfy.com/#app",
+        "name": "Confy",
+        "applicationCategory": "FinanceApplication",
+        "operatingSystem": "Android",
+        "description": "Confy es una app que ayuda a negocios en Colombia a verificar comprobantes de transferencias bancarias. Compara el monto, la fecha y la hora de cada comprobante con el aviso que Bancolombia envía a tu correo y te muestra si coincide.",
+        "url": "https://appconfy.com/",
+        "inLanguage": "es-CO",
+        "publisher": {
+          "@id": "https://appconfy.com/#organization"
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <a class="skip" href="#contenido">Saltar al contenido</a>
@@ -37,11 +101,15 @@
   </header>
   <main id="contenido">
     <section class="hero">
+      <div class="wrap about">
+        <p class="eyebrow">Qué es Confy</p>
+        <p class="about-text">Confy es una app que ayuda a negocios en Colombia a verificar comprobantes de transferencias bancarias. Compara el monto, la fecha y la hora de cada comprobante con el aviso que Bancolombia envía a tu correo y te muestra si coincide.</p>
+      </div>
       <div class="wrap hero-grid">
         <div class="hero-copy">
           <p class="eyebrow">Para negocios que reciben transferencias Bancolombia</p>
           <h1>Que ningún comprobante falso te <em>engañe</em> otra vez.</h1>
-          <p class="lead">Confy cruza cada comprobante con el aviso real de Bancolombia y te dice si es verdad.</p>
+          <p class="lead">Confy cruza cada comprobante con el aviso real de Bancolombia y te muestra si coincide.</p>
           <div class="cta-row">
         <!-- PLAY: cuando exista la ficha, añade href="ENLACE_DE_GOOGLE_PLAY", cambia "Próximamente" por "Disponible en" y quita aria-disabled -->
         <a class="btn-play" aria-disabled="true"><span class="btn-kicker">Próximamente</span><span>Descargar en Google Play</span></a>
@@ -69,7 +137,7 @@
         <div class="section-head"><p class="eyebrow">El problema</p><h2>Lo que pasa en el mostrador, resuelto.</h2></div>
         <div class="pains">
           <div class="pain"><p class="pain-q">¿Será que sí llegó la plata?</p><p class="pain-a"><span aria-hidden="true">→</span><span>Confy revisa si el aviso del banco llegó a tu correo y te muestra el resultado en el comprobante.</span></p></div>
-          <div class="pain"><p class="pain-q">Comprobantes editados que parecen reales.</p><p class="pain-a"><span aria-hidden="true">→</span><span>Confy no se fija en cómo se ve la imagen. La compara con el aviso que te mandó el banco.</span></p></div>
+          <div class="pain"><p class="pain-q">Comprobantes editados que parecen reales.</p><p class="pain-a"><span aria-hidden="true">→</span><span>Confy no juzga si la imagen parece real: compara sus datos con el aviso del banco.</span></p></div>
           <div class="pain"><p class="pain-q">Abrir la app del banco cada vez que alguien paga.</p><p class="pain-a"><span aria-hidden="true">→</span><span>El estado aparece en Confy. No tienes que entrar al banco para revisar cada pago.</span></p></div>
           <div class="pain"><p class="pain-q">Discutir con el trabajador sobre un pago.</p><p class="pain-a"><span aria-hidden="true">→</span><span>Cada comprobante queda con quién lo subió y su estado.</span></p></div>
         </div>
@@ -131,8 +199,8 @@
       <div class="wrap split">
         <div class="section-head"><p class="eyebrow">Preguntas frecuentes</p><h2>Lo que más nos preguntan.</h2></div>
         <div class="faq">
-          <details open><summary>¿Con qué bancos funciona?</summary><div class="faq-a"><p>Por ahora, con transferencias de Bancolombia.</p></div></details>
-          <details><summary>¿Qué correo necesito?</summary><div class="faq-a"><p>Gmail u Outlook. Te conectas iniciando sesión con tu cuenta de Google o de Microsoft.</p></div></details>
+          <details open><summary>¿Con qué bancos funciona?</summary><div class="faq-a"><p>Por ahora, con pagos y transferencias que recibes en una cuenta Bancolombia.</p></div></details>
+          <details><summary>¿Qué correo necesito?</summary><div class="faq-a"><p>Gmail u Outlook. Te conectas iniciando sesión con tu cuenta de Google o de Microsoft. Debe ser el correo donde recibes los avisos de Bancolombia.</p></div></details>
           <details><summary>¿Confy me pide la clave del banco?</summary><div class="faq-a"><p>No. Confy no pide la clave de tu banco.</p></div></details>
           <details><summary>¿Qué pasa con las fotos de los comprobantes?</summary><div class="faq-a"><p>Se borran a los 30 días. Los datos del pago se conservan mientras exista la cuenta y se borran al eliminarla.</p></div></details>
           <details><summary>¿Cómo elimino mi cuenta?</summary><div class="faq-a"><p>En la página Eliminar cuenta explicamos cómo. Si eres el dueño, se borra todo; si eres trabajador, tus comprobantes quedan en el negocio sin tu nombre.</p></div></details>
@@ -156,6 +224,7 @@
       <div class="footer-brand">
         <span class="brand-sm"><img src="assets/confy-icono.webp" alt="" width="22" height="22">Confy</span>
         <span>Verificación de comprobantes para negocios en Colombia.</span>
+        <span>Confy no está afiliada a Bancolombia ni a Nequi.</span>
       </div>
       <nav class="footer-legal" aria-label="Legal">
           <a href="privacidad/">Política de privacidad</a>

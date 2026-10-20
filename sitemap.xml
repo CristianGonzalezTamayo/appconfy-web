@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://appconfy.com/</loc>
+    <lastmod>2026-10-20</lastmod>
+    <xhtml:link rel="alternate" hreflang="es-CO" href="https://appconfy.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://appconfy.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://appconfy.com/"/>
+  </url>
+  <url>
+    <loc>https://appconfy.com/en/</loc>
+    <lastmod>2026-10-20</lastmod>
+    <xhtml:link rel="alternate" hreflang="es-CO" href="https://appconfy.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://appconfy.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://appconfy.com/"/>
+  </url>
+  <url>
+    <loc>https://appconfy.com/privacidad/</loc>
+    <lastmod>2026-10-20</lastmod>
+    <xhtml:link rel="alternate" hreflang="es-CO" href="https://appconfy.com/privacidad/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://appconfy.com/en/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://appconfy.com/privacidad/"/>
+  </url>
+  <url>
+    <loc>https://appconfy.com/en/privacy/</loc>
+    <lastmod>2026-10-20</lastmod>
+    <xhtml:link rel="alternate" hreflang="es-CO" href="https://appconfy.com/privacidad/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://appconfy.com/en/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://appconfy.com/privacidad/"/>
+  </url>
+  <url>
+    <loc>https://appconfy.com/eliminar-cuenta/</loc>
+    <lastmod>2026-10-20</lastmod>
+    <xhtml:link rel="alternate" hreflang="es-CO" href="https://appconfy.com/eliminar-cuenta/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://appconfy.com/en/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://appconfy.com/eliminar-cuenta/"/>
+  </url>
+  <url>
+    <loc>https://appconfy.com/en/delete-account/</loc>
+    <lastmod>2026-10-20</lastmod>
+    <xhtml:link rel="alternate" hreflang="es-CO" href="https://appconfy.com/eliminar-cuenta/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://appconfy.com/en/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://appconfy.com/eliminar-cuenta/"/>
+  </url>
+</urlset>

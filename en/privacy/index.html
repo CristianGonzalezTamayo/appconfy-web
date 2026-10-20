@@ -4,15 +4,28 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Privacy policy · Confy</title>
-  <meta name="description" content="What data Confy collects, why, and for how long.">
+  <meta name="description" content="Confy’s privacy policy: what data it collects, why it uses it, how long it keeps it and how to delete it.">
   <link rel="canonical" href="https://appconfy.com/en/privacy/">
-  <link rel="alternate" hreflang="es" href="https://appconfy.com/privacidad/">
+  <link rel="alternate" hreflang="es-CO" href="https://appconfy.com/privacidad/">
   <link rel="alternate" hreflang="en" href="https://appconfy.com/en/privacy/">
   <link rel="alternate" hreflang="x-default" href="https://appconfy.com/privacidad/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Confy">
   <meta property="og:title" content="Privacy policy · Confy">
-  <meta property="og:description" content="What data Confy collects, why, and for how long.">
+  <meta property="og:description" content="Confy’s privacy policy: what data it collects, why it uses it, how long it keeps it and how to delete it.">
   <meta property="og:url" content="https://appconfy.com/en/privacy/">
   <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="es_CO">
+  <meta property="og:image" content="https://appconfy.com/assets/og-confy-en.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Confy: never get fooled by a fake receipt again">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Privacy policy · Confy">
+  <meta name="twitter:description" content="Confy’s privacy policy: what data it collects, why it uses it, how long it keeps it and how to delete it.">
+  <meta name="twitter:image" content="https://appconfy.com/assets/og-confy-en.png">
+  <meta name="twitter:image:alt" content="Confy: never get fooled by a fake receipt again">
   <meta name="theme-color" content="#1B4332">
   <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon-32.png">
   <link rel="apple-touch-icon" href="../../assets/apple-touch-icon.png">
@@ -53,6 +66,7 @@
           <li><a href="#retention-and-deletion">Retention and deletion</a></li>
           <li><a href="#how-to-delete-your-account">How to delete your account</a></li>
           <li><a href="#security">Security</a></li>
+          <li><a href="#data-controller">Data controller</a></li>
           <li><a href="#your-rights">Your rights</a></li>
           <li><a href="#children">Children</a></li>
           <li><a href="#changes">Changes</a></li>
@@ -64,7 +78,7 @@
         <h2 id="data-we-collect">Data we collect</h2>
         <ul>
         <li>Account: email, name and role (owner or employee).</li>
-        <li>Receipts: the photo and details of each transfer (amount, date and time, bank).</li>
+        <li>Receipts: the photo and details of each transfer (amount, date and time, bank). We also store the text the app reads from the photo, which may include names or account numbers that appear in it.</li>
         <li>Bank notification emails: if the owner connects Gmail, Confy searches only for emails sent by the sender of Bancolombia's alerts and opens only those that match. If the owner connects Outlook, Confy asks Microsoft only for emails from that sender and checks again that the sender matches exactly. From each alert it takes the amount, date and time and uses them only to verify receipts.</li>
         <li>Notification token: a device identifier used to send you alerts.</li>
         </ul>
@@ -72,8 +86,16 @@
         <p>Only to verify receipts, show their status and send you alerts. We do not sell your data, use it for advertising, or share it with third parties, except the providers that run the app: Supabase (database and storage), Google Firebase (notifications) and Google or Microsoft (email connection).</p>
         <h2 id="google-data-gmail">Google data (Gmail)</h2>
         <p>The use of information received from Google Workspace scopes will adhere to the Google User Data Policy, including the Limited Use requirements.</p>
+        <p>You can read that policy here: <a href="https://developers.google.com/terms/api-services-user-data-policy" rel="noopener">Google User Data Policy</a>.</p>
+        <p>The permission we request from Gmail is read-only (gmail.readonly): Confy does not send, modify or delete emails. For that data, we commit to the following:</p>
+        <ul>
+        <li>We use it only to verify receipts.</li>
+        <li>We do not transfer it to third parties, except for security purposes, to comply with the law or with your consent. The providers that run the app, listed above, process it only on our behalf.</li>
+        <li>We do not use it for advertising and we do not sell it.</li>
+        <li>No one on the team reads your emails. We do not store their text and we only access the derived data (amount, date and time) to investigate errors or abuse, or if the law requires it.</li>
+        </ul>
         <h2 id="retention-and-deletion">Retention and deletion</h2>
-        <p>Receipt photos are automatically deleted after 30 days. Payment details (amount, date, time, bank, receipt number and status) are kept while your account exists and are deleted when you delete it. You can request deletion of your account and data by writing to <a href="mailto:soporte@appconfy.com">soporte@appconfy.com</a>. You can revoke access to your email at any time from your Google or Microsoft account.</p>
+        <p>Receipt photos are automatically deleted after 30 days. Payment details (amount, date, time, bank, receipt number and status) are kept while your account exists and are deleted when you delete it. The text the app reads from the photo is kept while your account exists, even though the photo is deleted after 30 days. You can request deletion of your account and data by writing to <a href="mailto:soporte@appconfy.com">soporte@appconfy.com</a>. You can revoke access to your email at any time from your Google or Microsoft account.</p>
         <p>From the bank's email we store only the amount, date, time, a message identifier and the verification result. We do not store the email text or the payer's name. The access permissions to your email are stored in our database and are used only by our server; the app cannot read them. You can disconnect your email from the app.</p>
         <h2 id="how-to-delete-your-account">How to delete your account</h2>
         <ul>
@@ -82,7 +104,9 @@
         </ul>
         <p>What is deleted: your account, your name and your email. If you are a business <strong>owner</strong>, everything is deleted: the business, all its receipts and photos, connected email accounts and invitations. If you are an <strong>employee</strong>, the receipts you sent remain in the business history for the owner, without your name.</p>
         <h2 id="security">Security</h2>
-        <p>Data travels over secure connections (HTTPS) and access is restricted per account.</p>
+        <p>Data travels over secure connections (HTTPS) and access is restricted per account. Data is stored on Supabase servers in São Paulo, Brazil.</p>
+        <h2 id="data-controller">Data controller</h2>
+        <p>The controller of your personal data is Cristian González Tamayo, an individual (natural person), Medellín (Antioquia), Colombia. Email: <a href="mailto:soporte@appconfy.com">soporte@appconfy.com</a>.</p>
         <h2 id="your-rights">Your rights</h2>
         <p>Under Colombian Law 1581 of 2012, you may access, update, correct and request deletion of your data by writing to <a href="mailto:soporte@appconfy.com">soporte@appconfy.com</a>.</p>
         <h2 id="children">Children</h2>
@@ -99,6 +123,7 @@
       <div class="footer-brand">
         <span class="brand-sm"><img src="../../assets/confy-icono.webp" alt="" width="22" height="22">Confy</span>
         <span>Receipt verification for businesses in Colombia.</span>
+        <span>Confy is not affiliated with Bancolombia or Nequi.</span>
       </div>
       <nav class="footer-legal" aria-label="Legal">
           <a href="../../en/privacy/">Privacy policy</a>

@@ -1,18 +1,31 @@
 <!doctype html>
-<html lang="es">
+<html lang="es-CO">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Política de privacidad · Confy</title>
-  <meta name="description" content="Qué datos recoge Confy, para qué y por cuánto tiempo.">
+  <meta name="description" content="Política de privacidad de Confy: qué datos recoge, para qué los usa, cuánto tiempo los conserva y cómo borrarlos.">
   <link rel="canonical" href="https://appconfy.com/privacidad/">
-  <link rel="alternate" hreflang="es" href="https://appconfy.com/privacidad/">
+  <link rel="alternate" hreflang="es-CO" href="https://appconfy.com/privacidad/">
   <link rel="alternate" hreflang="en" href="https://appconfy.com/en/privacy/">
   <link rel="alternate" hreflang="x-default" href="https://appconfy.com/privacidad/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Confy">
   <meta property="og:title" content="Política de privacidad · Confy">
-  <meta property="og:description" content="Qué datos recoge Confy, para qué y por cuánto tiempo.">
+  <meta property="og:description" content="Política de privacidad de Confy: qué datos recoge, para qué los usa, cuánto tiempo los conserva y cómo borrarlos.">
   <meta property="og:url" content="https://appconfy.com/privacidad/">
   <meta property="og:locale" content="es_CO">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:image" content="https://appconfy.com/assets/og-confy-es.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Confy: que ningún comprobante falso te engañe otra vez">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Política de privacidad · Confy">
+  <meta name="twitter:description" content="Política de privacidad de Confy: qué datos recoge, para qué los usa, cuánto tiempo los conserva y cómo borrarlos.">
+  <meta name="twitter:image" content="https://appconfy.com/assets/og-confy-es.png">
+  <meta name="twitter:image:alt" content="Confy: que ningún comprobante falso te engañe otra vez">
   <meta name="theme-color" content="#1B4332">
   <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
   <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
@@ -53,6 +66,7 @@
           <li><a href="#conservacion-y-eliminacion">Conservación y eliminación</a></li>
           <li><a href="#como-eliminar-tu-cuenta">Cómo eliminar tu cuenta</a></li>
           <li><a href="#seguridad">Seguridad</a></li>
+          <li><a href="#responsable-del-tratamiento">Responsable del tratamiento</a></li>
           <li><a href="#tus-derechos">Tus derechos</a></li>
           <li><a href="#menores">Menores</a></li>
           <li><a href="#cambios">Cambios</a></li>
@@ -64,7 +78,7 @@
         <h2 id="datos-que-recopilamos">Datos que recopilamos</h2>
         <ul>
         <li>Cuenta: correo, nombre y rol (dueño o trabajador).</li>
-        <li>Comprobantes: la foto y los datos de cada transferencia (monto, fecha y hora, entidad).</li>
+        <li>Comprobantes: la foto y los datos de cada transferencia (monto, fecha y hora, entidad). También guardamos el texto que la app lee de la foto, que puede incluir nombres o números de cuenta que aparezcan en ella.</li>
         <li>Correos de notificación bancaria: si el dueño conecta Gmail, Confy busca solo los correos enviados por el remitente de los avisos de Bancolombia y abre únicamente los que coinciden. Si conecta Outlook, Confy le pide a Microsoft solo los correos de ese remitente y vuelve a comprobar que el remitente coincida exactamente. De cada aviso toma el monto, la fecha y la hora, y los usa solo para verificar comprobantes.</li>
         <li>Token de notificaciones: un identificador del dispositivo para enviarte avisos.</li>
         </ul>
@@ -72,8 +86,16 @@
         <p>Solo para verificar comprobantes, mostrarte su estado y enviarte avisos. No vendemos tus datos, no los usamos para publicidad y no los compartimos con terceros, salvo los proveedores que hacen funcionar la app: Supabase (base de datos y almacenamiento), Google Firebase (notificaciones) y Google o Microsoft (conexión de correo).</p>
         <h2 id="datos-de-google-gmail">Datos de Google (Gmail)</h2>
         <p>El uso de la información recibida de los alcances de Google Workspace se realizará de conformidad con la Política de Datos del Usuario de Google, incluidos los requisitos de Uso Limitado.</p>
+        <p>Puedes leer esa política aquí: <a href="https://developers.google.com/terms/api-services-user-data-policy" rel="noopener">Política de Datos del Usuario de Google</a>.</p>
+        <p>El permiso que pedimos a Gmail es de solo lectura (gmail.readonly): Confy no envía, modifica ni borra correos. Sobre esos datos, nos comprometemos a lo siguiente:</p>
+        <ul>
+        <li>Los usamos solo para verificar comprobantes.</li>
+        <li>No los transferimos a terceros, salvo por seguridad, para cumplir la ley o con tu consentimiento. Los proveedores que hacen funcionar la app, indicados arriba, los procesan solo por nuestra cuenta.</li>
+        <li>No los usamos para publicidad ni los vendemos.</li>
+        <li>Nadie del equipo lee tus correos. No guardamos su texto y solo accedemos a los datos derivados (monto, fecha y hora) para investigar errores o abusos, o si la ley lo exige.</li>
+        </ul>
         <h2 id="conservacion-y-eliminacion">Conservación y eliminación</h2>
-        <p>Las fotos de comprobantes se eliminan automáticamente a los 30 días. Los datos de cada pago (monto, fecha, hora, banco, número de comprobante y estado) se conservan mientras exista tu cuenta y se borran cuando la eliminas. Puedes pedir la eliminación de tu cuenta y tus datos escribiendo a <a href="mailto:soporte@appconfy.com">soporte@appconfy.com</a>. Puedes revocar el acceso a tu correo en cualquier momento desde tu cuenta de Google o Microsoft.</p>
+        <p>Las fotos de comprobantes se eliminan automáticamente a los 30 días. Los datos de cada pago (monto, fecha, hora, banco, número de comprobante y estado) se conservan mientras exista tu cuenta y se borran cuando la eliminas. El texto que la app lee de la foto se conserva mientras exista tu cuenta, aunque la foto se borre a los 30 días. Puedes pedir la eliminación de tu cuenta y tus datos escribiendo a <a href="mailto:soporte@appconfy.com">soporte@appconfy.com</a>. Puedes revocar el acceso a tu correo en cualquier momento desde tu cuenta de Google o Microsoft.</p>
         <p>Del correo del banco guardamos únicamente el monto, la fecha, la hora, un identificador del mensaje y el resultado de la verificación. No guardamos el texto del correo ni el nombre de quien pagó. Los permisos de acceso a tu correo se guardan en nuestra base de datos y solo los usa nuestro servidor; la app no puede leerlos. Puedes desconectar tu correo desde la app.</p>
         <h2 id="como-eliminar-tu-cuenta">Cómo eliminar tu cuenta</h2>
         <ul>
@@ -82,7 +104,9 @@
         </ul>
         <p>Qué se borra: tu cuenta, tu nombre y tu correo. Si eres <strong>dueño</strong> de un negocio, se borra todo: el negocio, todos sus comprobantes y sus fotos, los correos conectados y las invitaciones. Si eres <strong>trabajador</strong>, los comprobantes que enviaste se conservan en el historial del negocio para el dueño, sin tu nombre.</p>
         <h2 id="seguridad">Seguridad</h2>
-        <p>Los datos viajan por conexiones seguras (HTTPS) y el acceso está restringido por cuenta.</p>
+        <p>Los datos viajan por conexiones seguras (HTTPS) y el acceso está restringido por cuenta. Los datos se almacenan en servidores de Supabase en São Paulo, Brasil.</p>
+        <h2 id="responsable-del-tratamiento">Responsable del tratamiento</h2>
+        <p>El responsable del tratamiento de tus datos es Cristian González Tamayo, persona natural, Medellín (Antioquia), Colombia. Correo: <a href="mailto:soporte@appconfy.com">soporte@appconfy.com</a>.</p>
         <h2 id="tus-derechos">Tus derechos</h2>
         <p>Conforme a la Ley 1581 de 2012 de Colombia, puedes conocer, actualizar, rectificar y pedir la supresión de tus datos escribiendo a <a href="mailto:soporte@appconfy.com">soporte@appconfy.com</a>.</p>
         <h2 id="menores">Menores</h2>
@@ -99,6 +123,7 @@
       <div class="footer-brand">
         <span class="brand-sm"><img src="../assets/confy-icono.webp" alt="" width="22" height="22">Confy</span>
         <span>Verificación de comprobantes para negocios en Colombia.</span>
+        <span>Confy no está afiliada a Bancolombia ni a Nequi.</span>
       </div>
       <nav class="footer-legal" aria-label="Legal">
           <a href="../privacidad/">Política de privacidad</a>
