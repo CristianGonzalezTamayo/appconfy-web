@@ -16,7 +16,6 @@
   <meta name="theme-color" content="#1B4332">
   <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
   <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
-  <link rel="preload" href="../fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="../styles.css">
   <script src="../theme.js"></script>
 </head>
@@ -41,7 +40,7 @@
       <div class="wrap">
         <p class="eyebrow">/privacidad</p>
         <h1>Política de privacidad</h1>
-        <p class="meta">Última actualización: <time datetime="2026-10-11">11 de octubre de 2026</time></p>
+        <p class="meta">Última actualización: <time datetime="2026-10-20">20 de octubre de 2026</time></p>
       </div>
     </section>
     <div class="wrap legal-body">
@@ -50,6 +49,7 @@
         <ol>
           <li><a href="#datos-que-recopilamos">Datos que recopilamos</a></li>
           <li><a href="#para-que-los-usamos">Para qué los usamos</a></li>
+          <li><a href="#datos-de-google-gmail">Datos de Google (Gmail)</a></li>
           <li><a href="#conservacion-y-eliminacion">Conservación y eliminación</a></li>
           <li><a href="#como-eliminar-tu-cuenta">Cómo eliminar tu cuenta</a></li>
           <li><a href="#seguridad">Seguridad</a></li>
@@ -65,14 +65,16 @@
         <ul>
         <li>Cuenta: correo, nombre y rol (dueño o trabajador).</li>
         <li>Comprobantes: la foto y los datos de cada transferencia (monto, fecha y hora, entidad).</li>
-        <li>Correos de notificación bancaria: si el dueño conecta su cuenta de Gmail u Outlook, Confy lee únicamente los correos del banco para verificar comprobantes.</li>
-        <li>SMS (solo Android): si el dueño lo activa, Confy lee únicamente los mensajes de remitentes bancarios de confianza para verificar comprobantes. Pedimos permiso antes de activarlo. Los demás mensajes se revisan solo dentro del teléfono para identificar los del banco; no los guardamos ni los enviamos a nuestros servidores. Si un mensaje dice ser de Bancolombia pero llega de un número que no es del banco, guardamos solo ese número (y cuántas veces llegó) y una huella cifrada del mensaje para detectar fraudes; nunca el texto del mensaje.</li>
+        <li>Correos de notificación bancaria: si el dueño conecta Gmail, Confy busca solo los correos enviados por el remitente de los avisos de Bancolombia y abre únicamente los que coinciden. Si conecta Outlook, Confy le pide a Microsoft solo los correos de ese remitente y vuelve a comprobar que el remitente coincida exactamente. De cada aviso toma el monto, la fecha y la hora, y los usa solo para verificar comprobantes.</li>
         <li>Token de notificaciones: un identificador del dispositivo para enviarte avisos.</li>
         </ul>
         <h2 id="para-que-los-usamos">Para qué los usamos</h2>
         <p>Solo para verificar comprobantes, mostrarte su estado y enviarte avisos. No vendemos tus datos, no los usamos para publicidad y no los compartimos con terceros, salvo los proveedores que hacen funcionar la app: Supabase (base de datos y almacenamiento), Google Firebase (notificaciones) y Google o Microsoft (conexión de correo).</p>
+        <h2 id="datos-de-google-gmail">Datos de Google (Gmail)</h2>
+        <p>El uso de la información recibida de los alcances de Google Workspace se realizará de conformidad con la Política de Datos del Usuario de Google, incluidos los requisitos de Uso Limitado.</p>
         <h2 id="conservacion-y-eliminacion">Conservación y eliminación</h2>
-        <p>Las fotos de comprobantes se eliminan automáticamente a los 30 días. Los datos de cada pago (monto, fecha, hora, banco, número de comprobante y estado) se conservan mientras exista tu cuenta y se borran cuando la eliminas. Puedes pedir la eliminación de tu cuenta y tus datos escribiendo a <a href="mailto:soporte@appconfy.com">soporte@appconfy.com</a>. Puedes revocar el acceso a tu correo o a los SMS en cualquier momento desde tu cuenta de Google o Microsoft y desde los ajustes del teléfono.</p>
+        <p>Las fotos de comprobantes se eliminan automáticamente a los 30 días. Los datos de cada pago (monto, fecha, hora, banco, número de comprobante y estado) se conservan mientras exista tu cuenta y se borran cuando la eliminas. Puedes pedir la eliminación de tu cuenta y tus datos escribiendo a <a href="mailto:soporte@appconfy.com">soporte@appconfy.com</a>. Puedes revocar el acceso a tu correo en cualquier momento desde tu cuenta de Google o Microsoft.</p>
+        <p>Del correo del banco guardamos únicamente el monto, la fecha, la hora, un identificador del mensaje y el resultado de la verificación. No guardamos el texto del correo ni el nombre de quien pagó. Los permisos de acceso a tu correo se guardan en nuestra base de datos y solo los usa nuestro servidor; la app no puede leerlos. Puedes desconectar tu correo desde la app.</p>
         <h2 id="como-eliminar-tu-cuenta">Cómo eliminar tu cuenta</h2>
         <ul>
         <li><strong>Desde la app:</strong> abre Confy, toca el menú ⋮ y elige <strong>Eliminar mi cuenta</strong>. Escribe ELIMINAR para confirmar.</li>
@@ -80,7 +82,7 @@
         </ul>
         <p>Qué se borra: tu cuenta, tu nombre y tu correo. Si eres <strong>dueño</strong> de un negocio, se borra todo: el negocio, todos sus comprobantes y sus fotos, los correos conectados y las invitaciones. Si eres <strong>trabajador</strong>, los comprobantes que enviaste se conservan en el historial del negocio para el dueño, sin tu nombre.</p>
         <h2 id="seguridad">Seguridad</h2>
-        <p>Los datos viajan cifrados y el acceso está restringido por cuenta.</p>
+        <p>Los datos viajan por conexiones seguras (HTTPS) y el acceso está restringido por cuenta.</p>
         <h2 id="tus-derechos">Tus derechos</h2>
         <p>Conforme a la Ley 1581 de 2012 de Colombia, puedes conocer, actualizar, rectificar y pedir la supresión de tus datos escribiendo a <a href="mailto:soporte@appconfy.com">soporte@appconfy.com</a>.</p>
         <h2 id="menores">Menores</h2>

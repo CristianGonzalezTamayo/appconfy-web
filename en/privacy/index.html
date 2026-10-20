@@ -16,7 +16,6 @@
   <meta name="theme-color" content="#1B4332">
   <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon-32.png">
   <link rel="apple-touch-icon" href="../../assets/apple-touch-icon.png">
-  <link rel="preload" href="../../fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="../../styles.css">
   <script src="../../theme.js"></script>
 </head>
@@ -41,7 +40,7 @@
       <div class="wrap">
         <p class="eyebrow">/en/privacy</p>
         <h1>Privacy policy</h1>
-        <p class="meta">Last updated: <time datetime="2026-10-11">October 11, 2026</time></p>
+        <p class="meta">Last updated: <time datetime="2026-10-20">October 20, 2026</time></p>
       </div>
     </section>
     <div class="wrap legal-body">
@@ -50,6 +49,7 @@
         <ol>
           <li><a href="#data-we-collect">Data we collect</a></li>
           <li><a href="#how-we-use-it">How we use it</a></li>
+          <li><a href="#google-data-gmail">Google data (Gmail)</a></li>
           <li><a href="#retention-and-deletion">Retention and deletion</a></li>
           <li><a href="#how-to-delete-your-account">How to delete your account</a></li>
           <li><a href="#security">Security</a></li>
@@ -65,14 +65,16 @@
         <ul>
         <li>Account: email, name and role (owner or employee).</li>
         <li>Receipts: the photo and details of each transfer (amount, date and time, bank).</li>
-        <li>Bank notification emails: if the owner connects a Gmail or Outlook account, Confy reads only emails from the bank to verify receipts.</li>
-        <li>SMS (Android only): if the owner enables it, Confy reads only messages from trusted bank senders to verify receipts. We ask for permission before enabling it. Other messages are checked only on the phone to identify the bank's; we do not store them or send them to our servers. If a message claims to be from Bancolombia but comes from a number that is not the bank's, we store only that number (and how many times it arrived) and an encrypted fingerprint of the message to detect fraud; never the message text.</li>
+        <li>Bank notification emails: if the owner connects Gmail, Confy searches only for emails sent by the sender of Bancolombia's alerts and opens only those that match. If the owner connects Outlook, Confy asks Microsoft only for emails from that sender and checks again that the sender matches exactly. From each alert it takes the amount, date and time and uses them only to verify receipts.</li>
         <li>Notification token: a device identifier used to send you alerts.</li>
         </ul>
         <h2 id="how-we-use-it">How we use it</h2>
         <p>Only to verify receipts, show their status and send you alerts. We do not sell your data, use it for advertising, or share it with third parties, except the providers that run the app: Supabase (database and storage), Google Firebase (notifications) and Google or Microsoft (email connection).</p>
+        <h2 id="google-data-gmail">Google data (Gmail)</h2>
+        <p>The use of information received from Google Workspace scopes will adhere to the Google User Data Policy, including the Limited Use requirements.</p>
         <h2 id="retention-and-deletion">Retention and deletion</h2>
-        <p>Receipt photos are automatically deleted after 30 days. Payment details (amount, date, time, bank, receipt number and status) are kept while your account exists and are deleted when you delete it. You can request deletion of your account and data by writing to <a href="mailto:soporte@appconfy.com">soporte@appconfy.com</a>. You can revoke access to your email or SMS at any time from your Google or Microsoft account and from your phone settings.</p>
+        <p>Receipt photos are automatically deleted after 30 days. Payment details (amount, date, time, bank, receipt number and status) are kept while your account exists and are deleted when you delete it. You can request deletion of your account and data by writing to <a href="mailto:soporte@appconfy.com">soporte@appconfy.com</a>. You can revoke access to your email at any time from your Google or Microsoft account.</p>
+        <p>From the bank's email we store only the amount, date, time, a message identifier and the verification result. We do not store the email text or the payer's name. The access permissions to your email are stored in our database and are used only by our server; the app cannot read them. You can disconnect your email from the app.</p>
         <h2 id="how-to-delete-your-account">How to delete your account</h2>
         <ul>
         <li><strong>In the app:</strong> open Confy, tap the ⋮ menu and choose <strong>Eliminar mi cuenta</strong> (Delete my account). Type ELIMINAR to confirm.</li>
@@ -80,7 +82,7 @@
         </ul>
         <p>What is deleted: your account, your name and your email. If you are a business <strong>owner</strong>, everything is deleted: the business, all its receipts and photos, connected email accounts and invitations. If you are an <strong>employee</strong>, the receipts you sent remain in the business history for the owner, without your name.</p>
         <h2 id="security">Security</h2>
-        <p>Data is encrypted in transit and access is restricted per account.</p>
+        <p>Data travels over secure connections (HTTPS) and access is restricted per account.</p>
         <h2 id="your-rights">Your rights</h2>
         <p>Under Colombian Law 1581 of 2012, you may access, update, correct and request deletion of your data by writing to <a href="mailto:soporte@appconfy.com">soporte@appconfy.com</a>.</p>
         <h2 id="children">Children</h2>

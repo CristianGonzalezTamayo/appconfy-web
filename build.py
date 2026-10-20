@@ -154,7 +154,6 @@ def shell(page, lang, title, desc, h1, meta_html, body_html, toc, short=False, c
   <meta name="theme-color" content="#1B4332">
   <link rel="icon" type="image/png" sizes="32x32" href="{up}assets/favicon-32.png">
   <link rel="apple-touch-icon" href="{up}assets/apple-touch-icon.png">
-  <link rel="preload" href="{up}fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="{up}styles.css">
   <script src="{up}theme.js"></script>
 </head>
